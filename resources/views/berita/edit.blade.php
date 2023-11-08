@@ -3,7 +3,7 @@
 
     <div class="p-4 sm:ml-64">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <form method="POST" action="{{ route('berita.edit', $berita->slug) }}" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('berita.update', $berita->slug) }}" enctype="multipart/form-data">
                 @method('put')
                 @csrf
                 <div class="mb-6">
